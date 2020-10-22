@@ -2,13 +2,15 @@
 @import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
 @import url(./fontello.css);
 /* 숨김 제목 및 숨김 콘텐트 */
-.a11y-hidden {
+.a11y-hidden, legend {
   position: absolute;
   width: 1px;
   height: 1px;
   margin: 0;
   overflow: hidden;
   clip-path: polygon(0 0, 0 0, 0 0);
+  clip: rect(0 0 0 0);
+  clip: rect(0,0,0,0);
 }
 
 body *, body *::before, body *::after {
@@ -227,10 +229,29 @@ a {
   float: left;
 }
 .group1 {
-  background: orangered;
+  background: blueviolet;
   width: 250px;
 }
-
+/* .group1 .login {
+  background: orangered;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0 gray;
+}
+.login-heading {
+  color: yellow;
+  font-size: 1.6rem;
+  padding-top: 10px;
+  padding-left: 15px;
+}
+fieldset {
+  position: relative;
+}
+.user-email, .user-pw {
+  display: flex;
+}
+.btn-login {
+  float: right;
+} */
 .group2 {
   background: lightgreen;
   width: 380px;
