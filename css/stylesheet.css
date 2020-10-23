@@ -410,6 +410,16 @@ fieldset {
 .validation-list a:hover, .validation-list a:focus {
   color: #f00;
 }
+.term {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background: linear-gradient(to bottom,#eee, #ccc );
+  
+}
+
+
 .slogan {
   background: orange;
 }
