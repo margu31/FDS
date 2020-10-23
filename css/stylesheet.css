@@ -76,15 +76,14 @@ a {
 }
 .menu {
   background: linear-gradient(
-    to bottom,
-    rgba(229,174,45,1) 0%,
-    rgba(224,121,42,1) 35%,
-    rgba(224,121,42,1) 70%,
-    rgba(229,174,45,1) 100%
+    to bottom, 
+    #f9bf00 0%,
+    #ff7400 35%,
+    #ff7400 70%,
+    #f9bf00 100%
     );
   border-top: 2px solid currentColor;
   margin: 10px 0 0 0 ;
-  padding-left: 0;
   list-style: none;
   height: 47px;
   border-radius: 0 0 5px 5px;
@@ -208,7 +207,7 @@ a {
   animation-fill-mode: forwards;
 }
 .main {
-  background: skyblue;
+  background: #fff;
   /* display: flex;
   flex-flow: row nowrap;
   padding: 30px;
@@ -229,39 +228,162 @@ a {
   float: left;
 }
 .group1 {
-  background: blueviolet;
+ 
   width: 250px;
 }
 /* .group1 .login {
-  background: orangered;
-  border-radius: 10px;
+  background: linear-gradient(45deg, #ff7400 79%,#f9bf00 100%);
+  border-radius: 7px;
   box-shadow: 5px 5px 0 gray;
+  padding: 10px;
 }
 .login-heading {
   color: yellow;
   font-size: 1.6rem;
-  padding-top: 10px;
-  padding-left: 15px;
+  margin: 0;
+  padding-left: 10px;
 }
 fieldset {
+  margin: 10px 0 0 0;
+  padding: 10px 10px 0 10px;
+  background: #fff;
+  border: 0;
+  border-radius: 5px 5px 0 0;
   position: relative;
 }
 .user-email, .user-pw {
-  display: flex;
+  /* padding-top: 5px;
+  line-height: 30px;
+}
+.user-email input, .user-pw input {
+  width: 100px;
+  display: inline-block;
+}
+.user-email input {
+  margin-left: 15px;
+}
+.user-pw input {
+  margin-left: 2px;
 }
 .btn-login {
-  float: right;
-} */
+  background: orangered;
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.login-member {
+  background: #fff;
+  margin: 0;
+  border-radius: 0 0 5px 5px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  font-size: 1.3rem;
+  line-height: 30px;
+}
+.signup, .find-pw {
+  border-top: 1px solid lightslategray;
+  justify-content: space-between;
+  padding-top: 5px;
+}
+.icon-right-open {
+  color: orangered;
+}  */
 .group2 {
-  background: lightgreen;
   width: 380px;
 }
 
 .group3 {
-  background: tomato;
   width: 190px;
 }
 
+/* 로그인 */
+.login {
+  background: radial-gradient(circle at right top, #f9bf00 , #ff7400);
+  border-radius: 5px;
+  box-shadow: 5px 5px 0 0 #ccc;
+  padding: 15px 10px;
+}
+.login-heading {
+  margin: 0;
+  color: #ff0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-indent: 10px;
+}
+.login-form {
+  margin-top: 10px;
+  padding: 10px 10px 0 10px;
+  background: #fff;
+  border-radius: 5px 5px 0 0;
+
+}
+.login-form fieldset {
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin: 0;
+  position: relative;
+}
+.user-email * {
+  vertical-align: top;
+}
+.user-email, .user-pw {
+  margin-bottom: 5px;
+}
+.login-form label {
+  width: 4em;
+  display: inline-block
+}
+.login-form input {
+  width: 90px;
+  height: 22px;
+  border: 1px solid #ccc;
+  padding: 1px 1px 1px 0.5em;
+}
+.btn-login {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  padding: 0 5px;
+  border: 0;
+  border-radius: 3px;
+  background: #ff7400;
+  color: #fff;
+}
+.login-member {
+  background: #fff;
+  padding: 2px 10px;
+  margin: 0;
+  list-style: none;
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  letter-spacing: -1px;
+}
+.login-member li {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.login-member a {
+  display: block;
+  padding: 8px 0;
+}
+.login-member .icon-right-open {
+  color: #ff7400;
+}
 .slogan {
   background: orange;
 }
