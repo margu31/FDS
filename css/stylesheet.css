@@ -329,6 +329,7 @@ fieldset {
 .login-form fieldset {
   border: 0;
   border-bottom: 1px solid #ccc;
+  padding: 0;
   padding-bottom: 5px;
   margin: 0;
   position: relative;
@@ -383,6 +384,31 @@ fieldset {
 }
 .login-member .icon-right-open {
   color: #ff7400;
+}
+.validation {
+  list-style: none;
+}
+.validation li {
+  line-height: 40px;
+  
+}
+/* 유효성 검사 배너 */
+.validation-list {
+  margin: 25px 0 0 0;
+  list-style: none;
+  padding-left: 0;
+}
+.validation-list a {
+  display: block;
+  border-radius: 20px;
+  border: 1px solid #aaa;
+  background: url(./images/validation_icon.png) no-repeat 25px 50% / 20px 20px, linear-gradient(to bottom, #eee, #ccc);
+  padding: 8px 10px 8px 55px;
+  margin-top: 10px;
+}
+/* li 에 선언하면 글자에 마우스 올려야만 클릭됨, a에 선언하면 배경만 선택해도 클릭 가능 / 배경 앞은 위치, 뒤는 이미지 크기 */
+.validation-list a:hover, .validation-list a:focus {
+  color: #f00;
 }
 .slogan {
   background: orange;
