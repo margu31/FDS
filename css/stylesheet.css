@@ -411,15 +411,101 @@ fieldset {
   color: #f00;
 }
 .term {
+  border: 1px solid #aaa;
+  background: linear-gradient(#ccc, #eee);
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.term-heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.term-list > div {
+  overflow: hidden;
+  background-color: skyblue;
+}
+.term-list div:nth-child(even) {
+  margin-top: 15px;
+}
+.term-list {
+  margin: 15px 0 0 0;
+  background-color: yellow;
+}
+.term-list-subject, .term-list-brief {
+  background-color: pink;
+  float: right;
+  width: 145px;
+}
+.term-list-subject {
+  color: #296897
+}
+.term-list-thumbnail {
+  background-color: lime;
+  float: left;
+}
+.term-list-thumbnail img {
+  display: block;
+}
+.term-list-brief {
+  background-color: orange;
+  float: right; /*부모크기랑 컨텐츠 영역의 크기가 동일해서 위로 안올라감, width 적용해주면 됨) */
+  width: 140px;
+  margin-top: 5px;
+  line-height: 1.5;
+}
+.term-list dd {
+  margin-left: 0;
+}
+.term-list div:nth-child(even) .term-list-subject,
+.term-list div:nth-child(even) .term-list-brief {
+  float: left;
+}
+.term-list div:nth-child(even) .term-list-thumbnail {
+  float: right;
+}
+/* .term {
   margin-top: 20px;
   padding: 15px;
   border: 1px solid #aaa;
   border-radius: 5px;
-  background: linear-gradient(to bottom,#eee, #ccc );
-  
+  background: linear-gradient(to bottom,#ccc, #eee );
 }
-
-
+.term-heading {
+  margin-top: 0;
+  font-size: 1.6rem;
+}
+.term-list-thumbnail, .term-list .term-list-brief {
+  margin-left: 0;
+}
+.term-list-subject {
+  display: inline-block;
+  margin-bottom: 5px;
+  color: #296897;
+}
+.odd .term-list-thumbnail {
+  float: left;
+  margin-right: 15px;
+}
+.odd::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.even {
+  margin-top: 10px;
+}
+.even .term-list-thumbnail {
+  float: right;
+  margin-left: 10px;
+}
+.even::after {
+  content: "";
+  clear: both;
+  display: block;
+} */
 .slogan {
   background: orange;
 }
