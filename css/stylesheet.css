@@ -425,10 +425,8 @@ fieldset {
 }
 .term-list {
   margin: 15px 0 0 0;
-  background-color: yellow;
 }
 .term-list-subject, .term-list-brief {
-  background-color: pink;
   float: right;
   width: 145px;
 }
@@ -436,14 +434,12 @@ fieldset {
   color: #296897
 }
 .term-list-thumbnail {
-  background-color: lime;
   float: left;
 }
 .term-list-thumbnail img {
   display: block;
 }
 .term-list-brief {
-  background-color: orange;
    /*부모크기랑 컨텐츠 영역의 크기가 동일해서 위로 안올라감, width 적용해주면 됨) */
   margin-top: 5px;
   line-height: 1.5;
@@ -553,7 +549,99 @@ fieldset {
 .search-form label {
   margin: 0;
 } */
-
+/* 공지사항 및 자료실 */
+.board {
+  background: yellow;
+  position: relative;
+  height: 200px;
+  margin-top: 20px;
+}
+.notice-list,
+.pds-list,
+.notice-more,
+.pds-more {
+  display: none;
+}
+.is-active .notice-list,
+.is-active .pds-list,
+.is-active .notice-more,
+.is-active .pds-more {
+  display: block;
+}
+.tab {
+  float: left;
+  margin: 0;
+}
+.tab a {
+  display: block;
+  border-radius: 5px 5px 0 0;
+  border: 1px solid #aaa;
+  background: #ccc linear-gradient(#ccc, #eee);
+  color: #999;
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 5px 10px;
+}
+.is-active .tab a {
+  color: #ff7400;
+  border-color: #ff7400 #ff7400 #fff #ff7400;
+  background: #fff;
+}
+.notice-list, .pds-list {
+  width: 100%;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  background: skyblue;
+  position: absolute;
+  left: 0;
+  top: 45px;
+}
+.notice-list li,
+.pds-list li {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 10px;
+}
+.notice-list a, 
+.pds-list a{
+  /* flex-grow: 1; */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 280px;
+}
+.notice-more,
+.pds-more {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: pink;
+  padding: 8px; /* 터치할 수 있는 영역을 좀더 넓게 */
+}
+.notice-more::before,
+.pds-more::before {
+  color: hsla(110, 50%, 30%, 1);
+}
+/* .board {
+  background-color: cyan;
+  position: relative;
+}
+.tab {
+  float: left;
+  padding: 5px;
+  border: 1px solid gray;
+}
+.notice {
+  background-color: yellow;
+}
+.pds {
+  background-color: green;
+}
+.notice-list li, .pds-list li {
+  position: absolute;
+  top: 100px;
+} */
 .group3 {
   width: 190px;
 }
