@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
+
 <head>
   <meta charset="UTF-8">
   <title>웹카페 - 고정형 레이아웃</title>
@@ -7,6 +8,7 @@
   <script src="./js/jquery.min.js" defer></script>
   <script src="./js/index.js" defer></script>
 </head>
+
 <body>
   <div class="skip-nav"><a href="#">본문 바로가기</a></div>
   <header class="header">
@@ -174,13 +176,15 @@
       <section class="vailidation">
         <h2 class="a11y-hidden">유효성 검사 배너</h2>
         <ul class="validation-list">
-          <li><a href="https://validator.w3.org/" target="_blank" title="마크업 유효성 검사 사이트로 이동">W3C Markup Validation</a></li>
-          <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank" title="CSS 유효성 검사 사이트로 이동">CSS Validation Service</a></li>
+          <li><a href="https://validator.w3.org/" target="_blank" title="마크업 유효성 검사 사이트로 이동">W3C Markup Validation</a>
+          </li>
+          <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank" title="CSS 유효성 검사 사이트로 이동">CSS Validation
+              Service</a></li>
         </ul>
       </section>
       <section class="term">
         <h2 class="term-heading">웹 관련 용어</h2>
-        <dl class="term-list">             
+        <dl class="term-list">
           <div>
             <dt class="term-list-subject">웹 표준 이란?</dt>
             <dd class="term-list-thumbnail">
@@ -287,7 +291,25 @@
         </section>
       </div>
       <section class="news">
-        <h2 class="news-heading">새소식</h2>
+        <h2 class="news-heading" id="newsHeading">새소식</h2>
+        <article class="news-article">
+          <a href="#" class="news-article-link">
+            <h3 class="news-article-subject">
+             W3C 사이트가 리뉴얼 되었습니다.
+            </h3>
+            <time class="news-article-date" datetime="2020-10-28T14:19:07">2020.10.28</time>
+            <p class="news-article-brief">
+            디자인 및 다양한 view 환경을 고려하여 구성되어 있으며,
+            기존보다 최신 정보 및 개발자를 위한 기술 가이드도
+            찾기 쉽도록 구성되어 있습니다.
+            </p>
+            <figure class="news-article-thumbnail">
+              <img src="./images/news.gif" alt="" aria-labelledby="newsArticleThumbnail">
+              <figcaption id="newsArticleThumbnail">W3C 리뉴얼</figcaption>
+            </figure>
+          </a>
+        </article>
+        <a href="#" class="icon-plus news-more" title="새소식" id="newsHeading">더보기</a>
       </section>
     </div>
     <div class="group group3">group3</div>
@@ -297,4 +319,5 @@
     <div class="footer-wrapper">footer</div>
   </footer>
 </body>
+
 </html>
