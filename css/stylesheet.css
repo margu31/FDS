@@ -718,6 +718,77 @@ fieldset {
 .group3 {
   width: 190px;
 }
+/* 신규 이벤트 및 관련 사이트 */
+.gradient-box {
+  background: #ccc linear-gradient(#ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px;
+}
+.event {
+  position: relative;
+}
+.event-heading, .related-heading {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0;
+}
+.point-color {
+  color: #ff7400;
+}
+.event-thumbnail img{
+  border: 1px solid #aaa;
+  box-shadow: 5px 5px 0 0 #aaa;
+}
+.event-brief {
+  line-height: 1.5;
+}
+.event-brief em {
+  font-style: normal;
+}
+.btn-event {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.btn-prev, .btn-next {
+  box-sizing: border-box;
+  border: 0;
+  padding: 18px 0 0 0;
+  width: 19px;
+  height: 18px;
+  overflow: hidden;
+  background: transparent url(./images/back_forward.png) 0 0 no-repeat;
+
+}
+.btn-next {
+  background-position: -36px 0;
+}
+/* .event-heading {
+  background-color: pink;
+  margin: 0;
+  font-size: 1.6rem;
+}
+.point-color {
+  color: #ff7400;
+}
+
+.event-thumbnail {
+  margin-top: 10px;
+}
+.event em {
+  font-style: none;
+}
+.btn-event {
+  
+}
+.btn-prev, .btn-next {
+  width: 19px;
+  height: 18px;
+  background-image: url(./images/back_forward.png);
+  text-indent: -9999px; white-space, overflow 같이 써야함
+} */
+
 .slogan {
   background: orange;
 }
