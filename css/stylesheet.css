@@ -732,7 +732,9 @@ fieldset {
 .related {
   padding-top: 10px;
 }
-.event-heading, .related-heading {
+.event-heading,
+.related-heading,
+.favorite-heading {
   font-size: 1.6rem;
   font-weight: 700;
   margin: 0;
@@ -801,11 +803,11 @@ fieldset {
   border: 1px solid #aaa;
   border-radius: 5px;
   overflow: hidden;
+  transition: height 400ms, padding 400ms 200ms;
 }
 .related-list:hover {
   height: 147px;
   padding: 10px 0;
-  transition: height 400ms, padding 400ms 200ms;
 }
 .related-list li {
   padding: 2px 5px 3px 5px;
@@ -842,6 +844,131 @@ fieldset {
 .related-list a {
   display: inline-block;
   width: 148px;
+} */
+/* 인기사이트 */
+.favorite {
+  margin-top: 20px;
+  position: relative;
+}
+.favorite-list {
+  margin: 10px 0 0 0;
+  padding-left: 0;
+  /* overflow: hidden; 이걸로 숫자만 숨기고 읽어주게 할 수 있음 */ 
+  list-style: none;
+}
+.favorite-list li {
+  margin-top: 8px;
+  counter-increment: number;
+  /* display: flex;
+  flex-flow: row nowrap;
+  align-items: center; */
+  position: relative;
+}
+.favorite-list li::before {
+  content: counter(number);
+  background: #999;
+  border-radius: 2px;
+  color: #fff;
+  margin-right: 5px;
+  font-size: 1.2rem;
+  display: inline-block;
+  padding: 2px 5px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* margin-top: -9px; */
+}
+.favorite-list a {
+
+  /* margin-right: 5px; */
+  /* flex-grow: 1; */
+  display: block;
+  margin: 0 10px 0 20px;
+}
+.up, .down, .stop {
+  /* display: inline-block; */
+  font-style: normal;
+  width: 9px;
+  height: 0;
+  overflow: hidden;
+  padding-top: 11px;
+  background: transparent url(./images/rank.png) no-repeat;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -5px;
+}
+.up {
+  background-position: 0 0;
+}
+.down {
+  background-position: 0 100%;
+}
+.stop {
+  background-position: 0 50%;
+}
+.favorite-more {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  padding: 8px;
+}
+.favorite-more::before {
+  color: hsla(110, 50%, 30%, 1);
+}
+/* .favorite {
+  background: #ccc linear-gradient(#ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 10px;
+  position: relative;
+}
+.favorite-heading {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.favorite-list {
+  list-style: none;
+  padding-left: 0;
+  line-height: 2;
+  counter-reset: number; 
+  margin-bottom: 0;
+}
+.favorite-list li {
+  counter-increment: number;
+  position: relative;
+}
+.favorite-list li::before {
+  content: counter(number);
+  background: #aaa;
+  border-radius: 5px;
+  width: 17px;
+  height: 17px;
+  padding: 0 5px;
+  margin-right: 5px;
+  color: #fff;
+}
+.up, .stop, .down {
+  
+}
+.up::before, .stop::before, .down::before {
+  content: "";
+  background-image: url(./images/rank.png);
+  width: 9px;
+  height: 10px;
+  position: absolute;
+  top: 8px;
+  right: 0;
+}
+.stop {
+  background-position: ;
+}
+.favorite-more {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 } */
 .slogan {
   background: orange;
